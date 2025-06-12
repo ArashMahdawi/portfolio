@@ -46,7 +46,17 @@ main, section {
   width: 100%;
 }
 
-/* Verwijder de algemene overflow regel voor alle divs */
+/* Voeg dit toe aan je globals.css */
+
+/* Specifieke fix voor BackToTop knop */
+.back-to-top-btn {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  max-width: 48px !important;
+  padding: 0 !important;
+  box-sizing: content-box !important;
+}
 
 
 /* Verbeter touch targets voor mobiel */
