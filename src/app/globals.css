@@ -20,21 +20,20 @@
 }
 
 /* Vervang de vorige overflow fixes met dit: */
+/* Tijdelijke debug code - voeg dit toe */
 * {
   box-sizing: border-box;
+  /* Tijdelijk - laat zien welke elementen te breed zijn */
+  /* outline: 1px solid red !important; */
 }
 
-html {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  /* Verwijder overflow-x: hidden van body */
+  overflow-x: hidden;
 }
+
 
 /* Alleen voor main containers */
 main, section {

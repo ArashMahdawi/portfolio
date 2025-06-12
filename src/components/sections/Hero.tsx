@@ -7,9 +7,9 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative w-full">
   {/* Animated background elements - maak ze smaller */}
   <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-72 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-    <div className="absolute bottom-1/4 right-1/4 w-72 h-72 sm:w-96 sm:h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-  </div>
+  <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+  <div className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-72 sm:h-72 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+</div>
             
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <motion.div

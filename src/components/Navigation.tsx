@@ -121,7 +121,7 @@ export default function Navigation() {
   animate={{ x: 0 }}
   exit={{ x: '100%' }}
   transition={{ type: 'tween', duration: 0.3 }}
-  className="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-xl overflow-y-auto" // Smaller width + scrollable
+  className="absolute right-0 top-0 h-full w-64 max-w-[80vw] bg-white shadow-xl overflow-y-auto" // Smaller width + scrollable
   onClick={(e) => e.stopPropagation()}
 >
   <div className="flex flex-col min-h-full">
