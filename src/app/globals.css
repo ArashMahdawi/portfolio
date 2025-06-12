@@ -19,29 +19,36 @@
   }
 }
 
-/* Voeg dit toe bovenaan je globals.css */
+/* Vervang de vorige overflow fixes met dit: */
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html {
   overflow-x: hidden;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-/* Fix voor elementen die te breed kunnen zijn */
-.container, section, div {
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Verwijder overflow-x: hidden van body */
+}
+
+/* Alleen voor main containers */
+main, section {
+  width: 100%;
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 /* Specifieke fix voor gradient backgrounds */
 .bg-gradient-to-br, .bg-gradient-to-r {
   width: 100%;
-  max-width: 100vw;
 }
+
+/* Verwijder de algemene overflow regel voor alle divs */
+
 
 /* Verbeter touch targets voor mobiel */
 @media (max-width: 768px) {
