@@ -24,6 +24,7 @@ export default function About() {
             Over Mij
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
+            Test - automatische deployment werkt! 
             Passionate developer met een oog voor detail en liefde voor clean code
           </p>
         </motion.div>
