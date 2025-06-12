@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
-      
+            
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,7 +18,8 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold text-white mb-6"
+            // Verbeterde responsive tekst groottes:
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -30,19 +31,19 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Developer
+              Arash
             </motion.span>
           </motion.h1>
         </motion.div>
 
         <motion.p 
-          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+          // Verbeterde responsive tekst:
+          className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          2 jaar ervaring in het bouwen van moderne web applicaties. 
-          Gepassioneerd over clean code en gebruiksvriendelijke interfaces.
+          Passionate developer die mooie en functionele web applicaties bouwt
         </motion.p>
 
         <motion.div 
@@ -52,16 +53,16 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <motion.a 
-            href="#projects" 
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+            href="#projects"
+            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             Bekijk mijn werk
           </motion.a>
           <motion.a 
-            href="#contact" 
-            className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-lg font-medium hover:bg-blue-400 hover:text-white transition-all duration-300"
+            href="#contact"
+            className="border-2 border-blue-400 text-blue-400 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-blue-400 hover:text-white transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >

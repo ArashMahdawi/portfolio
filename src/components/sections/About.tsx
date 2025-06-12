@@ -30,30 +30,30 @@ export default function About() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Profile Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            <div className="relative w-64 h-80 sm:w-72 sm:h-84 md:w-80 md:h-88 mx-auto">
-              {/* Decorative background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl rotate-6"></div>
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl -rotate-6"></div>
-              
-              {/* Profile photo */}
-              <div className="relative w-full h-88 rounded-3xl overflow-hidden shadow-2xl">
-                <Image 
-                  src="/images/Me.jpg" 
-                  alt="Arash Mahdawi-Nader" 
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="relative w-64 h-80 sm:w-72 sm:h-84 md:w-80 md:h-88 mx-auto">
+            {/* Decorative background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl rotate-6"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl -rotate-6"></div>
+                          
+            {/* Profile photo - nu met dezelfde responsive heights */}
+            <div className="relative w-full h-80 sm:h-84 md:h-88 rounded-3xl overflow-hidden shadow-2xl">
+              <Image 
+                src="/images/Me.jpg"
+                alt="Arash Mahdawi-Nader"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
-          </motion.div>
+          </div>
+        </motion.div>
 
           {/* Content */}
           <motion.div
