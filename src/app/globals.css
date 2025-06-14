@@ -61,6 +61,31 @@ div.bg-gradient-to-r:not(.w-14):not(.flex):not(.space-y-6) {
   box-sizing: content-box !important;
 } */
 
+/* Button text centering fix */
+button, 
+.btn, 
+a[class*="bg-gradient"],
+a[class*="bg-gray"],  
+a[class*="border-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Mobile specific button fixes */
+@media (max-width: 640px) {
+  button, 
+  .btn, 
+  a[class*="bg-gradient"], 
+  a[class*="border-"] {
+    line-height: 1.2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 
 /* Verbeter touch targets voor mobiel */
 @media (max-width: 768px) {
