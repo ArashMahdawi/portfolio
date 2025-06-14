@@ -58,7 +58,7 @@ export default function Hero() {
     whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.95 }}
   >
-    Bekijk mijn werk
+    Mijn werk
   </motion.a>
   <motion.a 
     href="#contact"
