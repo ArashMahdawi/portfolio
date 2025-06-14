@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { HiEnvelope } from 'react-icons/hi2'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -26,25 +28,25 @@ export default function Contact() {
   }
 
   const contactInfo = [
-    {
-      icon: '📧',
-      title: 'Email',
-      value: 'arashmahdawi@gmail.com',
-      link: 'mailto:arashmahdawi@gmail.com'
-    },
-    {
-      icon: '💼',
-      title: 'LinkedIn',
-      value: 'linkedin.com/in/arash-mahdawi-nader',
-      link: 'https://linkedin.com/in/arash-mahdawi-nader'
-    },
-    {
-      icon: '🐙',
-      title: 'GitHub',
-      value: 'github.com/arash-mahdawi-nader',
-      link: 'https://github.com/arash-mahdawi-nader'
-    }
-  ]
+  {
+    icon: <HiEnvelope className="w-6 h-6 text-white" />,
+    title: 'Email',
+    value: 'arashmahdawi@gmail.com',
+    link: 'mailto:arashmahdawi@gmail.com'
+  },
+  {
+    icon: <FaLinkedin className="w-6 h-6 text-white" />,
+    title: 'LinkedIn',
+    value: 'linkedin.com/in/arash-mahdawi-nader',
+    link: 'https://linkedin.com/in/arash-mahdawi-nader'
+  },
+  {
+    icon: <FaGithub className="w-6 h-6 text-white" />,
+    title: 'GitHub',
+    value: 'github.com/arash-mahdawi-nader',
+    link: 'https://github.com/arash-mahdawi-nader'
+  }
+]
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -107,8 +109,9 @@ export default function Contact() {
                   className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 w-full"
                 >
                   <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
-                    <span className="text-white text-xl">{item.icon}</span>
-                  </div>
+  {item.icon}
+</div>
+
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
                     <a

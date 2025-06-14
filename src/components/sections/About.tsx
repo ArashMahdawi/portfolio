@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { HiEnvelope } from 'react-icons/hi2'
+import { PiReadCvLogoBold } from "react-icons/pi";
 
 export default function About() {
   const skills = [
@@ -135,7 +137,7 @@ export default function About() {
     whileTap={{ scale: 0.95 }}
     className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all text-center sm:w-auto"
   >
-    📧 Neem Contact Op
+    <HiEnvelope className="w-6 h-6 mr-2 text-white" /> Neem Contact Op
   </motion.a>
   <motion.a
     href="/cv.pdf"
@@ -144,7 +146,7 @@ export default function About() {
     whileTap={{ scale: 0.95 }}
     className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all text-center sm:w-auto"
   >
-    📄 Bekijk mijn CV
+    <PiReadCvLogoBold className="w-6 h-6 mr-2 text-dark" /> Bekijk mijn CV
   </motion.a>
 </motion.div>
           </motion.div>
