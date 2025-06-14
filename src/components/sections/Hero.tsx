@@ -47,28 +47,28 @@ export default function Hero() {
         </motion.p>
 
         <motion.div 
-          className="flex gap-4 justify-center flex-wrap"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <motion.a 
-            href="#projects"
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Bekijk mijn werk
-          </motion.a>
-          <motion.a 
-            href="#contact"
-            className="border-2 border-blue-400 text-blue-400 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-blue-400 hover:text-white transition-all duration-300"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contact
-          </motion.a>
-        </motion.div>
+  className="flex gap-8 justify-center items-center"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.6 }}
+>
+  <motion.a 
+    href="#projects"
+    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg font-medium"
+    whileHover={{ scale: 1.05, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    Bekijk mijn werk
+  </motion.a>
+  <motion.a 
+    href="#contact"
+    className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-lg font-medium"
+    whileHover={{ scale: 1.05, y: -2 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    Contact
+  </motion.a>
+</motion.div>
 
         {/* Scroll indicator */}
         <motion.div 

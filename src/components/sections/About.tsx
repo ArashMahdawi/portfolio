@@ -121,8 +121,8 @@ export default function About() {
               ))}
             </motion.div>
 
-            {/* CTA Buttons */}
-            <motion.div
+         {/* CTA Buttons - smaller op desktop */}
+<motion.div
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.6 }}
@@ -133,7 +133,7 @@ export default function About() {
     href="#contact"
     whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.95 }}
-    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all text-center"
+    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all text-center sm:w-auto"
   >
     📧 Neem Contact Op
   </motion.a>
@@ -142,7 +142,7 @@ export default function About() {
     target="_blank"
     whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.95 }}
-    className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all text-center"
+    className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all text-center sm:w-auto"
   >
     📄 Bekijk mijn CV
   </motion.a>

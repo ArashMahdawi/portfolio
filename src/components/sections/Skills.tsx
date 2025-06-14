@@ -129,7 +129,7 @@ export default function Skills() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05, y: -2 }}
-                className="bg-gradient-to-r from-yellow-100 to-orange-100 text-orange-800 px-6 py-3 rounded-full text-sm font-medium border border-orange-200 shadow-md"
+                className="bg-gradient-to-r from-yellow-100 to-orange-100 text-orange-800 px-6 py-3 rounded-full text-sm font-medium border border-orange-200 shadow-md inline-block w-fit"
               >
                 🚀 {tech}
               </motion.span>
