@@ -121,7 +121,7 @@ export default function Skills() {
         >
           <h3 className="text-2xl font-bold mb-8 text-gray-900">Wat ik momenteel leer</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["React Native", "GraphQL", "Kubernetes", "Machine Learning"].map((tech, index) => (
+            {["React Native", "GraphQL", "Kubernetes", "Angular"].map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}

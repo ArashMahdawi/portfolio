@@ -95,7 +95,7 @@ export default function Contact() {
               en interessante gesprekken.
             </motion.p>
 
-            <div className="space-y-6">
+            <div className="space-y-6 w-full sm:w-auto">
               {contactInfo.map((item, index) => (
                 <motion.div
                   key={item.title}

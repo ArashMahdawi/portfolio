@@ -47,7 +47,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div 
-  className="flex gap-8 justify-center items-center"
+  className="flex gap-6 justify-center items-center"
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, delay: 0.6 }}
