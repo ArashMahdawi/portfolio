@@ -81,3 +81,11 @@ img {
   height: auto;
 }
 
+/* Mobile padding fix */
+@media (max-width: 640px) {
+  .max-w-6xl, .max-w-4xl, .max-w-2xl {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
