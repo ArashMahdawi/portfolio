@@ -56,7 +56,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Laten we Contact Maken
@@ -75,21 +75,11 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <motion.h3 
-              className="text-3xl font-bold mb-6 text-gray-900"
+            <motion.p 
+              className="text-gray-600 mb-8 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              Stuur me een bericht
-            </motion.h3>
-            
-            <motion.p 
-              className="text-gray-600 mb-8 text-lg leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
               Of je nu een freelance project hebt, een vaste positie aanbiedt, 
@@ -103,14 +93,14 @@ export default function Contact() {
                   key={item.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 w-full"
                 >
                   <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
-  {item.icon}
-</div>
+                    {item.icon}
+                  </div>
 
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
@@ -131,7 +121,7 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
               viewport={{ once: true }}
               className="mt-8 p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200"
             >

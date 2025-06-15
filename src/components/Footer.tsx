@@ -88,7 +88,7 @@ export default function Footer() {
           className="border-t border-gray-800 pt-8 text-center text-gray-400"
         >
           <p>&copy; {currentYear} Arash Mahdawi-Nader. Alle rechten voorbehouden.</p>
-          <p className="mt-2 text-sm">Gebouwd met Next.js, TypeScript & Tailwind CSS</p>
+          <p className="mt-4 text-sm">Gebouwd met Next.js, TypeScript & Tailwind CSS</p>
         </motion.div>
       </div>
     </footer>
