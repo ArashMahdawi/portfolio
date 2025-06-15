@@ -227,7 +227,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-lg"
               >
-                Verstuur Bericht 🚀
+                Verstuur Bericht
               </motion.button>
             </form>
 

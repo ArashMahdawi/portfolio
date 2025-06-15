@@ -1,20 +1,22 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { HiEnvelope } from 'react-icons/hi2'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/arash-mahdawi-nader', icon: '💼' },
-    { name: 'GitHub', url: 'https://github.com/arash-mahdawi-nader', icon: '🐙' },
-    { name: 'Email', url: 'mailto:arash@example.com', icon: '📧' },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/arash-mahdawi-nader', icon: <HiEnvelope /> },
+    { name: 'GitHub', url: 'https://github.com/arash-mahdawi-nader', icon: <FaGithub />},
+    { name: 'Email', url: 'mailto:arash@example.com', icon: <FaLinkedin /> },
   ]
 
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8 p-4">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
