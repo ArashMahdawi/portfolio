@@ -13,13 +13,48 @@ export default function Contact() {
     message: ''
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Voor nu alleen console.log, later kunnen we een API toevoegen
-    console.log('Form submitted:', formData)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  setIsSubmitting(true)
+
+  try {
+    console.log('Starting form submission...')
+    console.log('Form data:', formData)
+    
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+
+    console.log('Response received:', response)
+    console.log('Response status:', response.status)
+    console.log('Response ok:', response.ok)
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.log('Error response text:', errorText)
+      throw new Error(`HTTP ${response.status}: ${errorText}`)
+    }
+
+    const data = await response.json()
+    console.log('Success data:', data)
+    
     alert('Bedankt voor je bericht! Ik neem zo snel mogelijk contact op.')
     setFormData({ name: '', email: '', message: '' })
+    
+  } catch (error) {
+    console.error('Detailed error:', error)
+    alert(`Er ging iets mis: ${error.message}`)
+  } finally {
+    setIsSubmitting(false)
   }
+}
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -208,16 +243,18 @@ export default function Contact() {
                 />
               </motion.div>
 
-              <motion.button
-                type="submit"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-lg"
-              >
+               <motion.button
+    type="submit"
+    disabled={isSubmitting}
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.5 }}
+    viewport={{ once: true }}
+    whileHover={{ scale: 1.02, y: -2 }}
+    whileTap={{ scale: 0.98 }}
+    className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+  >
+    {isSubmitting ? 'Versturen...' : 'Verstuur Bericht'}
                 <RiMailSendFill className='w-6 h-6 mx-2'/> Verstuur Bericht
               </motion.button>
             </form>
