@@ -19,8 +19,6 @@
   }
 }
 
-/* Vervang de vorige overflow fixes met dit: */
-/* Tijdelijke debug code - voeg dit toe */
 * {
   box-sizing: border-box;
   /* Tijdelijk - laat zien welke elementen te breed zijn */
@@ -61,6 +59,8 @@ a[class*="border-"] {
   justify-content: center;
   line-height: 1;
   text-align: center;
+  width: 90%;
+  margin: auto 1rem auto 1rem;
 }
 
 /* Mobile specific button fixes */

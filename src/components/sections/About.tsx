@@ -66,7 +66,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <motion.h3 
-              className="text-3xl font-bold mb-6 text-gray-900"
+              className="text-3xl font-bold mb-6 text-gray-900 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -80,7 +80,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="space-y-4 text-gray-600 leading-relaxed"
+              className="space-y-4 text-gray-600 leading-relaxed px-5"
             >
               <p>
                 Als developer met 3 jaar ervaring ben ik gepassioneerd over het creëren van 
