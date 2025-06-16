@@ -8,11 +8,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/arash-mahdawi-nader', icon: <HiEnvelope /> },
+    { name: 'Email', url: 'mailto:arash@example.com', icon: <HiEnvelope /> },
     { name: 'GitHub', url: 'https://github.com/arash-mahdawi-nader', icon: <FaGithub />},
-    { name: 'Email', url: 'mailto:arash@example.com', icon: <FaLinkedin /> },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/arash-mahdawi-nader', icon: <FaLinkedin /> },
   ]
-
   return (
     <footer className="bg-gray-900 text-white pt-8 pb-4">
       <div className="max-w-6xl mx-auto px-4">
