@@ -254,8 +254,9 @@ const handleSubmit = async (e: React.FormEvent) => {
     whileTap={{ scale: 0.98 }}
     className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
   >
+    <RiMailSendFill className='w-6 h-6 mx-2'/> 
     {isSubmitting ? 'Versturen...' : 'Verstuur Bericht'}
-                <RiMailSendFill className='w-6 h-6 mx-2'/> 
+                
               </motion.button>
             </form>
 
