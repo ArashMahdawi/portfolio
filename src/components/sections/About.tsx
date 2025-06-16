@@ -7,10 +7,11 @@ import { PiReadCvLogoBold } from "react-icons/pi";
 
 export default function About() {
   const skills = [
-    { category: "Frontend", items: ["React & Next.js", "TypeScript", "Tailwind CSS"] },
-    { category: "Backend", items: ["Node.js", "Python", "Databases"] },
-    { category: "Tools", items: ["Git", "Docker", "AWS"] }
-  ]
+  { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React & Next.js", "TypeScript", "Vue.js", "Tailwind CSS"] },
+  { category: "Backend", items: ["Node.js", "PHP", "PostgreSQL", "MySQL", "REST APIs", "Docker", "phpMyAdmin"] },
+  { category: "Authentication", items: ["SAML/SSO", "MS Entra ID", "JWT"] },
+  { category: "Tools", items: ["Git", "VS Code", "Vercel", "Wappler", "Figma"] },
+]
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -26,7 +27,7 @@ export default function About() {
             Over Mij
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Passionate developer met een oog voor detail en liefde voor clean code
+            Gepassioneerde developer met een oog voor detail en liefde voor clean code
           </p>
         </motion.div>
 
@@ -82,7 +83,7 @@ export default function About() {
               className="space-y-4 text-gray-600 leading-relaxed"
             >
               <p>
-                Als developer met 2 jaar ervaring ben ik gepassioneerd over het creëren van 
+                Als developer met 3 jaar ervaring ben ik gepassioneerd over het creëren van 
                 gebruiksvriendelijke en efficiënte web applicaties. Ik hou van het oplossen 
                 van complexe problemen en het leren van nieuwe technologieën.
               </p>
