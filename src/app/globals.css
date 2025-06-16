@@ -59,8 +59,8 @@ a[class*="border-"] {
   justify-content: center;
   line-height: 1;
   text-align: center;
-  width: 90%;
-  margin: auto 1rem auto 1rem;
+  /* width: 90%;
+  margin: auto 1rem auto 1rem; */
 }
 
 /* Mobile specific button fixes */

@@ -136,7 +136,7 @@ export default function About() {
     href="#contact"
     whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.95 }}
-    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all text-center sm:w-auto"
+    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white w-80 md:w-100 mx-auto px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all text-center sm:w-auto"
   >
     <HiEnvelope className="w-6 h-6 mr-2 text-white" /> Neem Contact Op
   </motion.a>
@@ -145,7 +145,7 @@ export default function About() {
     target="_blank"
     whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.95 }}
-    className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all text-center sm:w-auto"
+    className="border-2 border-blue-600 text-blue-600 w-80 md:w-100 mx-auto px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-all text-center sm:w-auto"
   >
     <PiReadCvLogoBold className="w-6 h-6 mr-2 text-dark" /> Bekijk mijn CV
   </motion.a>
