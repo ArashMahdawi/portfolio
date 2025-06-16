@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiEnvelope } from 'react-icons/hi2'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { RiMailSendFill } from "react-icons/ri";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -217,7 +218,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 px-6 rounded-xl hover:shadow-lg transition-all duration-300 font-semibold text-lg"
               >
-                Verstuur Bericht
+                <RiMailSendFill className='w-6 h-6 mx-2'/> Verstuur Bericht
               </motion.button>
             </form>
 

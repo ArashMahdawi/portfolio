@@ -38,7 +38,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative"
+          className="relative self-start md:mt-6"
         >
           <div className="relative w-64 h-80 sm:w-72 sm:h-84 md:w-80 md:h-88 mx-auto">
             {/* Decorative background */}
