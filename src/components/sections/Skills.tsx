@@ -8,12 +8,13 @@ export default function Skills() {
       category: "Frontend",
       icon: "🎨",
       technologies: [
+        { name: "HTML/CSS", level: 95 },
+        { name: "JavaScript", level: 90 },
         { name: "React", level: 85 },
         { name: "Next.js", level: 70 },
         { name: "TypeScript", level: 80 },
-        { name: "JavaScript", level: 90 },
-        { name: "Tailwind CSS", level: 85 },
-        { name: "HTML/CSS", level: 95 }
+        { name: "Vue.js", level: 85 },
+        { name: "Tailwind CSS", level: 85 }       
       ]
     },
     {
@@ -21,23 +22,27 @@ export default function Skills() {
       icon: "⚙️",
       technologies: [
         { name: "Node.js", level: 75 },
-        { name: "Python", level: 70 },
-        { name: "Express.js", level: 80 },
+        { name: "PHP", level: 70 },
+        { name: "PostgreSQL", level: 75 },
+        { name: "MySQL", level: 80 },
         { name: "REST APIs", level: 85 },
-        { name: "MongoDB", level: 70 },
-        { name: "PostgreSQL", level: 65 }
+        { name: "Docker", level: 70 },
+        { name: "phpMyAdmin", level: 70 },
       ]
     },
     {
-      category: "Tools & DevOps",
+      category: "Tools & Authentication",
       icon: "🛠️",
       technologies: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 60 },
-        { name: "AWS", level: 55 },
-        { name: "Figma", level: 75 },
+        { name: "Git", level: 80 },
         { name: "VS Code", level: 95 },
-        { name: "Postman", level: 85 }
+        { name: "Vercel", level: 60 },
+        { name: "Wappler", level: 85 },
+        { name: "Figma", level: 75 },
+        { name: "Postman", level: 70 },
+        { name: "SAML/SSO", level: 60 },
+        { name: "Microsoft Entra ID", level: 60 },
+        { name: "JWT", level: 70 }
       ]
     }
   ]
