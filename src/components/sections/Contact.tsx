@@ -79,8 +79,8 @@ const handleSubmit = async (e: React.FormEvent) => {
   {
     icon: <FaGithub className="w-6 h-6 text-white" />,
     title: 'GitHub',
-    value: 'github.com/arash-mahdawi-nader',
-    link: 'https://github.com/arash-mahdawi-nader'
+    value: 'github.com/ArashMahdawi',
+    link: 'https://github.com/ArashMahdawi'
   }
 ]
 

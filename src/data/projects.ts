@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description: "Een webapplicatie voor Teamleiders om gesprekken van Agents te beoordelen en hun coachingsessies te beheren en bij te houden.",
     technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "jQuery", "JSON", "HTML", "CSS", "Bootstrap"],
     image: "/images/project1.jpg",
-    githubUrl: "https://github.com/jouw-username/project1",
+    // githubUrl: "https://github.com/jouw-username/project1",
     liveUrl: "https://project1.vercel.app",
   },
   {
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description: "Een dashboard voor het monitoren van de besteden tijd van gebruikers per module om deze te analyseren.",
     technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "Nodejs", "HTML", "CSS", "Bootstrap"],
     image: "/images/project2.jpg",
-    githubUrl: "https://github.com/jouw-username/project2",
+    // githubUrl: "https://github.com/jouw-username/project2",
     liveUrl: "https://project2.vercel.app"
   },
   {

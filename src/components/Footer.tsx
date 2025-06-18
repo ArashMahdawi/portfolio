@@ -9,7 +9,7 @@ export default function Footer() {
 
   const socialLinks = [
     { name: 'Email', url: 'mailto:arash@example.com', icon: <HiEnvelope /> },
-    { name: 'GitHub', url: 'https://github.com/arash-mahdawi-nader', icon: <FaGithub />},
+    { name: 'GitHub', url: 'https://github.com/ArashMahdawi', icon: <FaGithub />},
     { name: 'LinkedIn', url: 'https://linkedin.com/in/arash-mahdawi-nader', icon: <FaLinkedin /> },
   ]
   return (
