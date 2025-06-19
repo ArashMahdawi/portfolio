@@ -1,21 +1,21 @@
-export interface Project {
-  id: number
-  title: string
-  description: string
-  technologies: string[]
-  image: string
-  githubUrl?: string
-  liveUrl?: string
-}
-
 export const projects: Project[] = [
   {
     id: 1,
     title: "CoachingBuddy",
     description: "Een webapplicatie voor Teamleiders om gesprekken van Agents te beoordelen en hun coachingsessies te beheren en bij te houden.",
     technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "jQuery", "JSON", "HTML", "CSS", "Bootstrap"],
-    image: "/images/project1.jpg",
-    // githubUrl: "https://github.com/jouw-username/project1",
+    image: "/images/projects/cb1.jpg", // Alleen CoachingBuddy heeft image
+    screenshots: [
+      "/images/projects/cb1.jpg",
+      "/images/projects/cb2.jpg",
+      "/images/projects/cb3.jpg",
+      "/images/projects/cb4.jpg",
+      "/images/projects/cb5.jpg",
+      "/images/projects/cb6.jpg",
+      "/images/projects/cb7.jpg",
+      "/images/projects/cb8.jpg",
+      "/images/projects/cb9.jpg"
+    ],
     liveUrl: "https://project1.vercel.app",
   },
   {
@@ -23,8 +23,7 @@ export const projects: Project[] = [
     title: "Portal Analytics",
     description: "Een dashboard voor het monitoren van de besteden tijd van gebruikers per module om deze te analyseren.",
     technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "Nodejs", "HTML", "CSS", "Bootstrap"],
-    image: "/images/project2.jpg",
-    // githubUrl: "https://github.com/jouw-username/project2",
+    // image: "/images/project2.jpg", // Weggehaald - toont nu titel
     liveUrl: "https://project2.vercel.app"
   },
   {
@@ -32,7 +31,7 @@ export const projects: Project[] = [
     title: "Avatar Module",
     description: "Een module waarin gebruikers hun avatar kunnen aanpassen en deze in hun profiel kunnen opslaan.",
     technologies: ["JavaScript", "JSON", "PHP", "PostgreSQL", "HTML", "CSS", "Bootstrap"],
-    image: "/images/project3.jpg",
+    // image: "/images/project3.jpg", // Weggehaald - toont nu titel
     githubUrl: "https://github.com/jouw-username/project3",
     liveUrl: "https://project3.vercel.app"
   }
