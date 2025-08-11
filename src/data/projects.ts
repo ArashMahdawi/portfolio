@@ -31,8 +31,14 @@ export const projects: Project[] = [
     title: "Avatar Module",
     description: "Een module waarin gebruikers hun avatar kunnen aanpassen en deze in hun profiel kunnen opslaan.",
     technologies: ["JavaScript", "JSON", "PHP", "PostgreSQL", "HTML", "CSS", "Bootstrap"],
-    // image: "/images/project3.jpg", // Weggehaald - toont nu titel
-    githubUrl: "https://github.com/jouw-username/project3",
+    image: "/images/projects/av1.jpg", 
+    screenshots: [
+      "/images/projects/av1.jpg",
+      "/images/projects/av2.jpg",
+      "/images/projects/av3.jpg",
+      "/images/projects/av4.jpg"
+    ],
+    // githubUrl: "https://github.com/jouw-username/project3",
     liveUrl: "https://project3.vercel.app"
   }
 ]
