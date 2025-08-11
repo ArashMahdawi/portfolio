@@ -22,7 +22,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Portal Analytics",
     description: "Een dashboard voor het monitoren van de besteden tijd van gebruikers per module om deze te analyseren.",
-    technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "Nodejs", "HTML", "CSS", "Bootstrap"],
+    technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "Nodejs", "HTML", "CSS", "Tailwind"],
     image: "/images/projects/pa3.jpg", 
     screenshots: [
       "/images/projects/pa1.jpg",
