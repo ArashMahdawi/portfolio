@@ -23,7 +23,13 @@ export const projects: Project[] = [
     title: "Portal Analytics",
     description: "Een dashboard voor het monitoren van de besteden tijd van gebruikers per module om deze te analyseren.",
     technologies: ["Vue.js", "PHP", "PostgreSQL", "JavaScript", "Nodejs", "HTML", "CSS", "Bootstrap"],
-    // image: "/images/project2.jpg", // Weggehaald - toont nu titel
+    image: "/images/projects/pa3.jpg", 
+    screenshots: [
+      "/images/projects/pa1.jpg",
+      "/images/projects/pa2.jpg",
+      "/images/projects/pa3.jpg",
+      "/images/projects/pa4.jpg"
+    ],
     liveUrl: "https://project2.vercel.app"
   },
   {
