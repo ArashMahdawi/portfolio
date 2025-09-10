@@ -48,7 +48,7 @@ export default function About() {
     { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React & Next.js", "TypeScript", "Vue.js", "Tailwind CSS"] },
     { category: "Backend", items: ["Node.js", "PHP", "PostgreSQL", "MySQL", "REST APIs", "Docker", "phpMyAdmin"] },
     { category: "Authentication", items: ["SAML/SSO", "MS Entra ID", "JWT"] },
-    { category: "Tools", items: ["Git", "VS Code", "Vercel", "Wappler", "Figma"] },
+    { category: "Tools", items: ["Git", "VS Code", "Vercel", "Wappler", "Figma", "Microsoft Azure"] },
   ]
 
   return (
@@ -84,7 +84,7 @@ export default function About() {
               {/* Profile photo */}
               <div className="relative w-full h-80 sm:h-84 md:h-88 rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/Me.jpg"
+                  src="/images/Me.png"
                   alt="Arash Mahdawi-Nader"
                   fill
                   className="object-cover"
