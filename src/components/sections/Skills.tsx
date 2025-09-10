@@ -42,7 +42,8 @@ export default function Skills() {
         { name: "Postman", level: 70 },
         { name: "SAML/SSO", level: 60 },
         { name: "Microsoft Entra ID", level: 60 },
-        { name: "JWT", level: 70 }
+        { name: "JWT", level: 70 },
+        { name: "Microsft Azure", level: 50 }
       ]
     }
   ]
