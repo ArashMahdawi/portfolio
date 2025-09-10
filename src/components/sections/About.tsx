@@ -48,7 +48,7 @@ export default function About() {
     { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React & Next.js", "TypeScript", "Vue.js", "Tailwind CSS"] },
     { category: "Backend", items: ["Node.js", "PHP", "PostgreSQL", "MySQL", "REST APIs", "Docker", "phpMyAdmin"] },
     { category: "Authentication", items: ["SAML/SSO", "MS Entra ID", "JWT"] },
-    { category: "Tools", items: ["Git", "VS Code", "Vercel", "Wappler", "Figma", "Microsoft Azure"] },
+    { category: "Tools", items: ["Git", "VS Code", "Vercel", "Wappler", "Figma", "MS Azure"] },
   ]
 
   return (
