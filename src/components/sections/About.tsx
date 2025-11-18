@@ -119,7 +119,7 @@ export default function About() {
               className="space-y-4 text-gray-600 leading-relaxed px-5"
             >
               <p>
-                Als developer met 3 jaar ervaring ben ik gepassioneerd over het creëren van
+                Als developer met meer dan 3 jaar ervaring ben ik gepassioneerd over het creëren van
                 gebruiksvriendelijke en efficiënte web applicaties. Ik hou van het oplossen
                 van complexe problemen en het leren van nieuwe technologieën.
               </p>
