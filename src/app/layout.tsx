@@ -19,17 +19,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className="scroll-smooth">
-       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+        />
+
+        {/* Classic favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* SVG favicon */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        {/* PNG favicons */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+        {/* Apple touch icon */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+        {/* Manifest for PWA */}
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={inter.className}>
         <Navigation />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
         <BackToTop />
       </body>
     </html>
   )
 }
+
